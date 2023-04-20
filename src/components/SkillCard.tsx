@@ -7,9 +7,9 @@ interface Props {
 }
 const SkillCard = ({ title, Icon, skills }: Props) => {
   return (
-    <div className="border rounded-md p-4 max-w-[26rem] flex items-center mb-4">
+    <div className="border rounded-md p-3 flex items-center mb-4 lg:max-w-md">
       <Icon className="text-[1.7rem] text-slate-600 flex-[1]" />
-      <div className="flex-[2]">
+      <div className="flex-[3]">
         <h2 className="text-slate-800 font-semibold font-['montserrat'] text-base capitalize tracking-tight">
           {title}
         </h2>

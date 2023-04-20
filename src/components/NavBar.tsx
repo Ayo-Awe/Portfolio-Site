@@ -19,10 +19,10 @@ const NavBar = ({ logo, children }: Props) => {
       <div className="flex md:order-2 items-center">
         <a
           href="https://drive.google.com/uc?export=download&id=1uPbcmhG5bTZoTLlXgdko2r37eh_rX0I2"
-          download="Awe-resume.pdf"
+          download="Awe_resume"
           className="hover:text-gray-700"
         >
-          <FaFilePdf className=" text-2xl " />
+          <FaFilePdf className=" text-2xl mr-6 md:mr-0" />
         </a>
         <Navbar.Toggle />
       </div>
