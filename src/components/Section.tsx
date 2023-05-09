@@ -20,7 +20,7 @@ const Section = ({ children, id, variant, padding, title }: Props) => {
         }
       >
         {title ? (
-          <h2 className="text-left mb-16 text-4xl  col-span-2 text-slate-800 font-['montserrat'] font-semibold tracking-wider">
+          <h2 className="text-center md:text-left mb-16 text-4xl  col-span-2 text-slate-800 font-['montserrat'] font-semibold tracking-wider">
             {title}
           </h2>
         ) : null}
