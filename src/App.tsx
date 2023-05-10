@@ -10,10 +10,12 @@ import ExperienceTimelineItem from "./components/ExperienceTimelineItem";
 import { experience, skills, intro } from "../portfolio";
 import { Icon } from "@iconify-icon/react";
 import Section from "./components/Section";
+import TopButton from "./components/TopButton";
 
 function App() {
   return (
     <div className="text-[#9d9d9d] ">
+      <TopButton />
       <Section id="home">
         <NavBar logo={memoji}>
           <NavLink to="skills">Skills</NavLink>
@@ -36,8 +38,8 @@ function App() {
             </h1>
             <p>{intro.description}</p>
             <div className="my-8 flex items-center justify-between max-w-[16rem] m-auto md:mx-0 md:max-w-sm">
-              <button className="py-2 px-5 rounded-full bg-blue-500 text-white">
-                Contact Me
+              <button className="py-2 px-5 rounded-full bg-blue-500 text-white font-['montserrat']">
+                <a href="/resume.pdf">My Resume</a>
               </button>
               <SocialIcon Icon={FaGithub} link="https://github.com/Ayo-Awe" />
               <SocialIcon
