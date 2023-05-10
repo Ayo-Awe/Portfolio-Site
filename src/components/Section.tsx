@@ -14,7 +14,7 @@ const Section = ({ children, id, variant, padding, title }: Props) => {
       id={id}
       className={variant === "white" ? "bg-white" : "bg-[#fcfcfc]"}
     >
-      <div className={`max-w-[970px] m-auto px-6` + py}>
+      <div className={`max-w-[970px] m-auto px-6 sm:px-16 lg:px-6` + py}>
         {title && (
           <h2 className="text-center md:text-left mb-16 text-4xl  col-span-2 text-slate-800 font-['montserrat'] font-semibold tracking-wider">
             {title}

@@ -23,13 +23,13 @@ function App() {
           <NavLink to="projects">Projects</NavLink>
           <NavLink to="contact">Contact</NavLink>
         </NavBar>
-        <div className="m-auto grid sm:grid-cols-2">
+        <div className="m-auto grid lg:grid-cols-2">
           <img
             src={hero}
             alt="hero"
-            className="max-w-[20rem] sm:max-w-sm m-auto col-span-1 sm:order-1"
+            className="max-w-[18rem] sm:max-w-sm m-auto col-span-1 lg:order-1"
           />
-          <div className="py-10 max-w-md col-span-1 text-center md:text-left">
+          <div className="py-10 max-w-xl m-auto col-span-1 text-center lg:text-left">
             <h2 className="text-slate-800 font-medium tracking-[0.2em] uppercase ">
               {intro.heading}
             </h2>
@@ -37,7 +37,7 @@ function App() {
               {intro.tagline}
             </h1>
             <p>{intro.description}</p>
-            <div className="my-8 flex items-center justify-between max-w-[16rem] m-auto md:mx-0 md:max-w-sm">
+            <div className="my-8 flex items-center justify-between max-w-[18rem] md:max-w-[30rem] m-auto lg:mx-0 lg:max-w-sm">
               <button className="py-2 px-5 rounded-full bg-blue-500 text-white font-['montserrat']">
                 <a href="/resume.pdf">My Resume</a>
               </button>

@@ -14,6 +14,7 @@ const NavLink = ({ children, to }: Props) => {
         hashSpy={true}
         smooth={true}
         duration={500}
+        className=" hover:text-slate-900 hover:text-[1.17rem] transition-all text-slate-700"
       >
         {children}
       </Link>
