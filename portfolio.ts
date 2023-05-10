@@ -64,3 +64,9 @@ export const intro = {
     " Lorem ipsum dolor sit, amet consectetur adipisicing elit.\
 Nemo  consectetur, maxime dolorum corrupti perspiciatis laboriosam aperiam.",
 };
+
+export const socials = {
+  github: "https://github.com/Ayo-Awe",
+  linkedin: "https://www.linkedin.com/in/aweayo/",
+  twitter: "https://twitter.com/AweAyo_",
+};

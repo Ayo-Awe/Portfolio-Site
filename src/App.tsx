@@ -7,7 +7,7 @@ import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import SocialIcon from "./components/SocialIcon";
 import ExperienceTimeline from "./components/ExperienceTimeline";
 import ExperienceTimelineItem from "./components/ExperienceTimelineItem";
-import { experience, skills, intro } from "../portfolio";
+import { experience, skills, intro, socials } from "../portfolio";
 import { Icon } from "@iconify-icon/react";
 import Section from "./components/Section";
 import TopButton from "./components/TopButton";
@@ -41,12 +41,9 @@ function App() {
               <button className="py-2 px-5 rounded-full bg-blue-500 text-white font-['montserrat']">
                 <a href="/resume.pdf">My Resume</a>
               </button>
-              <SocialIcon Icon={FaGithub} link="https://github.com/Ayo-Awe" />
-              <SocialIcon
-                Icon={FaTwitter}
-                link="https://twitter.com/AweAyomidipupo"
-              />
-              <SocialIcon Icon={FaLinkedinIn} link="https" />
+              <SocialIcon Icon={FaGithub} link={socials.github} />
+              <SocialIcon Icon={FaTwitter} link={socials.twitter} />
+              <SocialIcon Icon={FaLinkedinIn} link={socials.linkedin} />
               <img src={arrow} alt="arrow" className="hidden md:inline" />
             </div>
           </div>
