@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar";
 import NavLink from "./components/NavLink";
 import hero from "./assets/hero.png";
-import memoji from "./assets/memoji.png";
+import logo from "./assets/logo.png";
 import arrow from "./assets/arrow.svg";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import SocialIcon from "./components/SocialIcon";
@@ -17,7 +17,7 @@ function App() {
     <div className="text-[#9d9d9d] ">
       <TopButton />
       <Section id="home">
-        <NavBar logo={memoji}>
+        <NavBar logo={logo}>
           <NavLink to="skills">Skills</NavLink>
           <NavLink to="experience">Experience</NavLink>
           <NavLink to="projects">Projects</NavLink>
@@ -27,7 +27,7 @@ function App() {
           <img
             src={hero}
             alt="hero"
-            className="max-w-[15rem] sm:max-w-sm m-auto col-span-1 sm:order-1"
+            className="max-w-[20rem] sm:max-w-sm m-auto col-span-1 sm:order-1"
           />
           <div className="py-10 max-w-md col-span-1 text-center md:text-left">
             <h2 className="text-slate-800 font-medium tracking-[0.2em] uppercase ">

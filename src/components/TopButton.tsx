@@ -30,7 +30,7 @@ const TopButton = () => {
           hashSpy={true}
           smooth={true}
           duration={500}
-          className="z-10 fixed right-6 bottom-5  rounded-lg py-2 px-1 text-slate-800 text-4xl cursor-pointer scroll"
+          className="z-10 fixed right-6 bottom-5 hover:text-[2.5rem] transition-all  rounded-lg py-2 px-1 text-slate-800 text-4xl cursor-pointer scroll"
         >
           <Icon icon="tabler:hand-finger" />
         </Link>

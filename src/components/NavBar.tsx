@@ -12,11 +12,11 @@ const NavBar = ({ logo, children }: Props) => {
     <Headroom>
       <Navbar
         fluid={true}
-        style={{ backgroundColor: "inherit", padding: 0 }}
+        style={{ backgroundColor: "inherit", padding: "5px 0" }}
         className="bg-inherit max-w-[922px] m-auto"
       >
         <Navbar.Brand href="https://www.aweayo.tech">
-          <img className="h-16" src={logo} />
+          <img className="h-10 hover:shadow-xl" src={logo} />
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>{children}</Navbar.Collapse>
