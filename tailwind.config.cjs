@@ -6,7 +6,14 @@ module.exports = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        alegreya: ["Alegreya Sans"],
+      },
+      aspectRatio: {
+        card: "16 / 9",
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 };

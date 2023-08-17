@@ -1,23 +1,23 @@
 import NavBar from "./components/NavBar";
 import NavLink from "./components/NavLink";
 import hero from "./assets/hero.png";
-import logo from "./assets/logo.png";
 import arrow from "./assets/arrow.svg";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import SocialIcon from "./components/SocialIcon";
 import ExperienceTimeline from "./components/ExperienceTimeline";
 import ExperienceTimelineItem from "./components/ExperienceTimelineItem";
-import { experience, skills, intro, socials } from "../portfolio";
+import { experience, skills, intro, socials, projects } from "../portfolio";
 import { Icon } from "@iconify-icon/react";
 import Section from "./components/Section";
 import TopButton from "./components/TopButton";
+import ProjectCard from "./components/ProjectCard";
 
 function App() {
   return (
     <div className="text-[#9d9d9d] ">
       <TopButton />
       <Section id="home">
-        <NavBar logo={logo}>
+        <NavBar logo="https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/logo.png">
           <NavLink to="skills">Skills</NavLink>
           <NavLink to="experience">Experience</NavLink>
           <NavLink to="projects">Projects</NavLink>
@@ -25,7 +25,7 @@ function App() {
         </NavBar>
         <div className="m-auto grid lg:grid-cols-2">
           <img
-            src={hero}
+            src="https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/hero.png"
             alt="hero"
             className="max-w-[18rem] sm:max-w-sm m-auto col-span-1 lg:order-1"
           />
@@ -68,6 +68,24 @@ function App() {
             />
           ))}
         </ExperienceTimeline>
+      </Section>
+      <Section
+        id="projects"
+        padding="large"
+        title="Featured Projects"
+        variant="white"
+      >
+        <div className="grid md:grid-cols-2 gap-4">
+          {projects.map((project) => (
+            <ProjectCard {...project} key={project.title} />
+          ))}
+        </div>
+      </Section>
+      <Section id="about" padding="large" title="Let's Connect!" variant="gray">
+        <p className="text-xl">
+          Want to discuss a project or just want to say hi? My inbox is always
+          open.
+        </p>
       </Section>
     </div>
   );
