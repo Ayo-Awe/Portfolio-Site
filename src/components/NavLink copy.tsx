@@ -6,10 +6,7 @@ interface Props {
 }
 const NavLink = ({ children, to }: Props) => {
   return (
-    <Navbar.Link
-      as={"p"}
-      className="font-['roboto'] font-medium text-lg hover:cursor-pointer"
-    >
+    <Navbar.Link className="font-['roboto'] font-medium text-lg hover:cursor-pointer">
       <Link
         activeClass="active"
         to={to}

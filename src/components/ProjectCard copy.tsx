@@ -37,9 +37,7 @@ const ProjectCard = (props: Props) => {
       <p className="mb-10 text-slate-700">{props.description}</p>
       <div className="text-slate-800 font-alegreya">
         {props.tools.map((tool) => (
-          <span key={tool} className="px-3 py-2 rounded-md bg-[#f1f1f1] mr-1">
-            {tool}
-          </span>
+          <span className="px-3 py-2 rounded-md bg-[#f1f1f1] mr-1">{tool}</span>
         ))}
       </div>
     </div>

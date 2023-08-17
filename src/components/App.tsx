@@ -1,16 +1,16 @@
-import NavBar from "./components/NavBar";
-import NavLink from "./components/NavLink";
-import hero from "./assets/hero.png";
-import arrow from "./assets/arrow.svg";
+import NavBar from "./NavBar";
+import NavLink from "./NavLink";
+import arrow from "../assets/arrow.svg";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import SocialIcon from "./components/SocialIcon";
-import ExperienceTimeline from "./components/ExperienceTimeline";
-import ExperienceTimelineItem from "./components/ExperienceTimelineItem";
+import SocialIcon from "./SocialIcon";
+import ExperienceTimeline from "./ExperienceTimeline";
+import ExperienceTimelineItem from "./ExperienceTimelineItem";
 import { experience, skills, intro, socials, projects } from "../portfolio";
 import { Icon } from "@iconify-icon/react";
-import Section from "./components/Section";
-import TopButton from "./components/TopButton";
-import ProjectCard from "./components/ProjectCard";
+import Section from "./Section";
+import TopButton from "./TopButton";
+import ProjectCard from "./ProjectCard";
+import Image from "next/image";
 
 function App() {
   return (
@@ -44,7 +44,7 @@ function App() {
               <SocialIcon Icon={FaGithub} link={socials.github} />
               <SocialIcon Icon={FaTwitter} link={socials.twitter} />
               <SocialIcon Icon={FaLinkedinIn} link={socials.linkedin} />
-              <img src={arrow} alt="arrow" className="hidden md:inline" />
+              <Image src={arrow} alt="arrow" className="hidden md:inline" />
             </div>
           </div>
         </div>
@@ -52,7 +52,10 @@ function App() {
       <Section id="skills" variant="white" padding="large" title="My Skills">
         <div className="text-center ">
           {skills.map(({ icon, name }) => (
-            <div className="mx-3 mb-10 inline-flex flex-col items-center">
+            <div
+              className="mx-3 mb-10 inline-flex flex-col items-center"
+              key={name}
+            >
               <Icon icon={icon} key={name} className="text-5xl" />
               <span className="text-sm mt-4">{name}</span>
             </div>
@@ -64,6 +67,7 @@ function App() {
           {experience.map((e, i) => (
             <ExperienceTimelineItem
               {...e}
+              key={e.companyName}
               variant={i % 2 == 0 ? "gray" : "blue"}
             />
           ))}
