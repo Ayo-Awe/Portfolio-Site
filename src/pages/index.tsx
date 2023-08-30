@@ -9,7 +9,7 @@ export default function Home() {
         <meta
           key="keywords"
           name="keywords"
-          content={`Awe, aweayo.com, Awe Ayomidipupo, Ayomidipupo, Awe Ayo, Software Engineer, HNG`}
+          content="Awe, aweayo.com, Awe Ayomidipupo, Ayomidipupo, Awe Ayo, Software Engineer, HNG"
         />
         <meta
           key="description"

@@ -14,7 +14,7 @@ import Image from "next/image";
 
 function App() {
   return (
-    <div className="text-[#9d9d9d] ">
+    <div className="text-[#9d9d9d] md:mb-16">
       <TopButton />
       <Section id="home">
         <NavBar logo="https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/logo.png">
@@ -24,10 +24,11 @@ function App() {
           <NavLink to="contact">Contact</NavLink>
         </NavBar>
         <div className="m-auto grid lg:grid-cols-2">
+          {/** eslint-disable-next-line */}
           <img
             src="https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/hero.png"
             alt="hero"
-            className="max-w-[18rem] sm:max-w-sm m-auto col-span-1 lg:order-1"
+            className="max-w-[18rem] md:max-w-sm m-auto col-span-1 lg:order-1"
           />
           <div className="py-10 max-w-xl m-auto col-span-1 text-center lg:text-left">
             <h2 className="text-slate-800 font-medium tracking-[0.2em] uppercase ">
@@ -85,11 +86,28 @@ function App() {
           ))}
         </div>
       </Section>
-      <Section id="about" padding="large" title="Let's Connect!" variant="gray">
-        <p className="text-xl">
+      <Section
+        id="contact"
+        padding="large"
+        title="Let's Connect!"
+        variant="gray"
+      >
+        <img
+          src="https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/T9YKRJATW-U04FRHBUJRK-ed0629adb638-512-photoaidcom-cropped.png"
+          className="h-60 md:inline mx-auto md:float-left md:mr-10"
+        ></img>
+        <p className="text-xl text-center md:text-left mt-4">
           Want to discuss a project or just want to say hi? My inbox is always
           open.
         </p>
+        <div className="my-8 flex items-center justify-between max-w-[18rem] m-auto md:mx-0 ">
+          <button className="py-2 px-5 rounded-full bg-blue-500 text-white font-['montserrat']">
+            <a href="mailto: hello@ayoawe.com">Contact Me</a>
+          </button>
+          <SocialIcon Icon={FaGithub} link={socials.github} />
+          <SocialIcon Icon={FaTwitter} link={socials.twitter} />
+          <SocialIcon Icon={FaLinkedinIn} link={socials.linkedin} />
+        </div>
       </Section>
     </div>
   );

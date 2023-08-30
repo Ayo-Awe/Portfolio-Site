@@ -41,7 +41,7 @@ const ExperienceTimelineItem = (props: Props) => {
         <h3 className="text-base font-semibold text-slate-600 mt-4">
           {props.companyName}
         </h3>
-        <p className="text-sm">
+        <p className="text-sm mb-4">
           {props.startDate} - {props?.endDate || "Present"}
         </p>
       </TimelineContent>
