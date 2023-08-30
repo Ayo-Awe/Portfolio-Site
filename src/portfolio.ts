@@ -99,21 +99,10 @@ export const projects = [
   {
     title: "Chimoney.js",
     tools: ["Typescript", "NPM", "Jest"],
-    githubUrl: "https://github.com/Ayo-Awe/simple_shell",
+    githubUrl: "https://github.com/Ayo-Awe/chimoney.js",
     description:
       "A comprehensive Node.js library that simplifies the integration with the Chimoney API.",
-    publicUrl: "hello",
-    id: 1,
-    image:
-      "https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/Modern%20Minimalist%20You%20tube%20Thumbnail.png",
-  },
-  {
-    title: "URL Shortner",
-    tools: ["Htmx", "Postgres", "Honos"],
-    githubUrl: "https://github.com/Ayo-Awe/simple_shell",
-    description:
-      "A simple url-shortner built with htmx and cloudflare workers.",
-    publicUrl: "hello",
+    publicUrl: "https://www.npmjs.com/package/chimoneyjs",
     id: 1,
     image:
       "https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/Modern%20Minimalist%20You%20tube%20Thumbnail.png",
