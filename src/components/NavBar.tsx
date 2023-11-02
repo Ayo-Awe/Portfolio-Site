@@ -2,9 +2,10 @@ import { ReactNode } from "react";
 import { FaFilePdf } from "react-icons/fa";
 import { Navbar } from "flowbite-react";
 import Headroom from "react-headroom";
+import Image, { StaticImageData } from "next/image";
 
 interface Props {
-  logo: string;
+  logo: string | StaticImageData;
   children: ReactNode;
 }
 const NavBar = ({ logo, children }: Props) => {
@@ -16,7 +17,7 @@ const NavBar = ({ logo, children }: Props) => {
         className="bg-inherit max-w-[922px] m-auto"
       >
         <Navbar.Brand href="https://www.aweayo.tech">
-          <img className="h-10 hover:shadow-xl" src={logo} />
+          <Image alt="logo" className="h-10 w-10 hover:shadow-xl" src={logo} />
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>{children}</Navbar.Collapse>

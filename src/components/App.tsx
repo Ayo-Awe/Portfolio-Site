@@ -11,13 +11,16 @@ import Section from "./Section";
 import TopButton from "./TopButton";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
+import hero from "../assets/hero.png";
+import profile from "../assets/profile.png";
+import logo from "../assets/logo.png";
 
 function App() {
   return (
     <div className="text-[#9d9d9d] md:mb-16">
       <TopButton />
       <Section id="home">
-        <NavBar logo="https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/logo.png">
+        <NavBar logo={logo}>
           <NavLink to="skills">Skills</NavLink>
           <NavLink to="experience">Experience</NavLink>
           <NavLink to="projects">Projects</NavLink>
@@ -25,8 +28,8 @@ function App() {
         </NavBar>
         <div className="m-auto grid lg:grid-cols-2">
           {/** eslint-disable-next-line */}
-          <img
-            src="https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/hero.png"
+          <Image
+            src={hero}
             alt="hero"
             className="max-w-[18rem] md:max-w-sm m-auto col-span-1 lg:order-1"
           />
@@ -92,10 +95,11 @@ function App() {
         title="Let's Connect!"
         variant="gray"
       >
-        <img
-          src="https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/T9YKRJATW-U04FRHBUJRK-ed0629adb638-512-photoaidcom-cropped.png"
-          className="h-60 md:inline mx-auto md:float-left md:mr-10"
-        ></img>
+        <Image
+          src={profile}
+          alt="profile"
+          className="h-60 w-60 md:inline mx-auto md:float-left md:mr-10"
+        />
         <p className="text-xl text-center md:text-left mt-4">
           Want to discuss a project or just want to say hi? My inbox is always
           open.
