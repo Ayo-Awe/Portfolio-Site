@@ -107,4 +107,14 @@ export const projects = [
     image:
       "https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/Modern%20Minimalist%20You%20tube%20Thumbnail.png",
   },
+  {
+    title: "Chimoney GitHub Bot",
+    tools: ["Typescript", "NPM", "GitHub"],
+    githubUrl:
+      "https://github.com/Ayo-Awe/chimoney-community-projects/tree/main/submissions/chimoney-github-bot",
+    description:
+      "A GitHub bot for reward open source contributors using Chimoney",
+    publicUrl: "https://github.com/apps/chimoneybot",
+    id: 4,
+  },
 ];
